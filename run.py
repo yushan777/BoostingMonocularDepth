@@ -26,7 +26,8 @@ import cv2
 import numpy as np
 import argparse
 import warnings
-warnings.simplefilter('ignore', np.RankWarning)
+# warnings.simplefilter('ignore', np.RankWarning)
+warnings.filterwarnings('ignore', category=Warning)
 
 # select device
 device = torch.device("cuda")
